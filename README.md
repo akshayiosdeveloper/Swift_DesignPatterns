@@ -26,6 +26,7 @@ Controlled Access: Ensures only one instance exists globally.
 Reduced Memory Usage: Avoids creating multiple instances of a resource-heavy object.
 Global Point of Access: Simplifies sharing data or resources.
 Lazy Initialization: The instance is created only when accessed, optimizing performance.
+
 **Disadvantages**
 
 Global State: Overusing singletons can lead to tightly coupled code and global dependencies.
