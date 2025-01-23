@@ -19,11 +19,22 @@ class ViewController: UIViewController {
         print(instance2)
         instance2.logMessage(message: "Still the same instance!")
         */
-        // Usage
+        /*
+        // Usage thread safe singleton instance
         DispatchQueue.concurrentPerform(iterations: 5) { _ in
             let instance = ThreadSafeSingleton.shared
             print(instance)
         }
+         */
+        // FACTORY PATTERN
+        // Step 4: Use the Factory
+        let factory = VehcileFactory()
+        let car = factory.createVehicle(.car)
+        print(car.engine)
+        print(car.numberofWheels)
+        let bike = factory.createVehicle(.bike)
+        print(bike.engine)
+        print(car.numberofWheels)
     }
 
 

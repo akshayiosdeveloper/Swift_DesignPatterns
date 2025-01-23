@@ -26,3 +26,16 @@ Disadvantages
 Global State: Overusing singletons can lead to tightly coupled code and global dependencies.
             Difficult to Test: Hard to mock or replace singletons during unit testing, leading to brittle tests. Concurrency Issues: If not implemented carefully, thread-safety problems may arise. Hidden Dependencies: Makes dependencies less obvious, affecting code readability and maintainability.
 */
+
+/* Factory Desing Pattern
+The Factory Pattern is a Creational Design Pattern that provides an interface for creating objects in a super class but allows subclasses to alter the type of objects that will be created.
+
+It abstracts the instantiation logic, making it easier to manage and scale object creation in your application.
+
+Key Characteristics:
+
+Promotes loose coupling by delegating the responsibility of object creation to a factory class or method.
+
+Useful when you have a common interface or superclass and want to decide the exact class to instantiate at runtime.
+
+ */
